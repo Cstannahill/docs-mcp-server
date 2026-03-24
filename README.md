@@ -1,6 +1,6 @@
 # Documentation MCP Server
 
-A Model Context Protocol (MCP) server that provides GitHub Copilot with access to the latest documentation for Rust, Tauri, React, TypeScript, Python, Tailwind CSS, and shadcn/ui. The server automatically fetches and updates documentation daily to ensure you always have access to the most current information.
+A Model Context Protocol (MCP) server that provides LLM with access to the latest documentation for Rust, Tauri, React, TypeScript, Python, Tailwind CSS, and shadcn/ui. The server automatically fetches and updates documentation daily to ensure you always have access to the most current information.
 
 ## Features
 
