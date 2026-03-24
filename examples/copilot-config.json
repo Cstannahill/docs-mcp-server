@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "docs-server": {
-      "command": "/workspaces/docs-mcp/target/release/docs-mcp-server",
-      "args": ["--database", "/workspaces/docs-mcp/data/docs.db"],
+      "command": "/workspaces/docs-mcp-server/target/release/docs-mcp-server",
+      "args": ["--database", "/workspaces/docs-mcp-server/data/docs.db"],
       "env": {
         "RUST_LOG": "info"
       }

@@ -8,7 +8,7 @@ echo "🔍 Testing Documentation Versioning System"
 echo "==========================================="
 
 # Check if server binary exists
-if [ ! -f "/workspaces/docs-mcp/target/release/docs-mcp-server" ]; then
+if [ ! -f "/workspaces/docs-mcp-server/target/release/docs-mcp-server" ]; then
     echo "❌ Server binary not found. Build failed."
     exit 1
 fi
@@ -16,7 +16,7 @@ fi
 echo "✅ Server binary found"
 
 # Check database file
-if [ ! -f "/workspaces/docs-mcp/docs.db" ]; then
+if [ ! -f "/workspaces/docs-mcp-server/docs.db" ]; then
     echo "ℹ️  No existing database found - will be created on first run"
 else
     echo "✅ Database file exists"
@@ -24,7 +24,7 @@ fi
 
 # Test basic server startup (without running MCP)
 echo "🚀 Testing server startup..."
-timeout 10 /workspaces/docs-mcp/target/release/docs-mcp-server --help > /dev/null 2>&1 || {
+timeout 10 /workspaces/docs-mcp-server/target/release/docs-mcp-server --help > /dev/null 2>&1 || {
     echo "❌ Server failed to start"
     exit 1
 }
@@ -32,7 +32,7 @@ timeout 10 /workspaces/docs-mcp/target/release/docs-mcp-server --help > /dev/nul
 echo "✅ Server can start successfully"
 
 # Check if .env file exists and has API key
-if [ -f "/workspaces/docs-mcp/.env" ]; then
+if [ -f "/workspaces/docs-mcp-server/.env" ]; then
     if grep -q "OPENAI_API_KEY" /workspaces/docs-mcp/.env; then
         echo "✅ OpenAI API key configured"
     else

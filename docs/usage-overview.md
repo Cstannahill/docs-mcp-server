@@ -1,6 +1,6 @@
 # Project Usage Overview
 
-This guide provides a detailed walkthrough of the `docs-mcp` project, describing the purpose and usage of each major section and module. Use this as a reference to understand the structure and functionality of the repository.
+This guide provides a detailed walkthrough of the `docs-mcp-server` project, describing the purpose and usage of each major section and module. Use this as a reference to understand the structure and functionality of the repository.
 
 ## Top-Level Files
 

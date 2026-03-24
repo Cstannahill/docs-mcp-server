@@ -18,7 +18,7 @@ def start_server():
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True,
-        cwd="/workspaces/docs-mcp",
+        cwd="/workspaces/docs-mcp-server",
     )
 
 

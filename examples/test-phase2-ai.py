@@ -82,7 +82,7 @@ def test_quality_analytics():
 
     # Check if we can access the test database
     try:
-        conn = sqlite3.connect("/workspaces/docs-mcp/test.db")
+        conn = sqlite3.connect("/workspaces/docs-mcp-server/test.db")
         cursor = conn.cursor()
 
         # Check tables exist
