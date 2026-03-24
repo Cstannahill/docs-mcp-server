@@ -32,7 +32,7 @@ A Model Context Protocol (MCP) server that provides GitHub Copilot with access t
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/Cstannahill/docs-mcp
 cd docs-mcp-server
 
 # Build the project
